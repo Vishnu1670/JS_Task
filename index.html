@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change</title>
+</head>
+<body>
+<center>
+    <h1>Change the box color</h1><br>
+    <div id="box" style="width:200px;height:100px;padding:16px;border:1px solid #000;"></div>
+<br>
+<button id="red"  onclick="document.getElementById('box').style.backgroundColor='red'" >Red</button>
+<button id="blue" onclick="document.getElementById('box').style.backgroundColor='blue'">Blue</button>
+<button id="green" onclick="document.getElementById('box').style.backgroundColor='green'">Green</button>
+<button id="yellow" onclick="document.getElementById('box').style.backgroundColor='yellow'">Yellow</button>
+    
+</body>
+</html>
+
+<script>
+    let red = document.getElementById('red')
+    red.addEventListener("click",function(){
+        alert('YOu click Red');
+    });
+</script>
+<style>
+  button {
+    margin: 8px;
+  }
+
+  #red {
+    background-color: red;
+    color: white;
+    padding: 8px 15px;
+    border: none;
+    margin: 5px;
+  }
+
+  #blue {
+    background-color: blue;
+    color: white;
+    padding: 8px 15px;
+    border: none;
+    margin: 5px;
+  }
+
+  #green {
+    background-color: green;
+    color: white;
+    padding: 8px 15px;
+    border: none;
+    margin: 5px;
+  }
+
+  #yellow {
+    background-color: yellow;
+    color: black;
+    padding: 8px 15px;
+    border: none;
+    margin: 5px;
+  }
+
+
+</style>

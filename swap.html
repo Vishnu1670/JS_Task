@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swap</title>
+</head>
+<center><h1>Swap The Box Color</h1></center><br>
+<body>
+    <center>
+    <button id="red" onclick="
+        document.getElementById('red').style.backgroundColor='blue';
+        document.getElementById('blue').style.backgroundColor='red';
+        ">
+    Red
+    </button>
+    <button id="blue" onclick="
+        document.getElementById('red').style.backgroundColor='red';
+        document.getElementById('blue').style.backgroundColor='blue';
+        ">
+    Blue
+    </button>
+    <div style="width:350px;padding:15px;border:1px solid #ccc;border-radius:1px;">
+  🔆 Brightness<br><br>
+  <input type="range" min="50" max="150" value="100"
+    oninput="document.body.style.filter='brightness('+this.value+'%)'">
+    </div>
+    </center>
+</body>
+</html>
+
+
+
+<script>
+function swap_color(id,colour){
+    var btn = document.getElementById(id)
+    btn.addEventListener("mouseover", function () {
+        btn.style.color=colour;
+        btn.style.backgroundColor="black";
+    });
+    btn.addEventListener("mouseout",function(){
+        btn.style.color="black";
+        btn.style.backgroundColor=colour;
+    });
+}
+swap_color("red","red");
+swap_color("blue","blue");
+
+</script>
+
+
+
+
+
+<style>
+#red {
+    background-color: red;
+    color: white;
+    padding: 8px 15px;
+    border: none;
+    margin: 5px;
+  }
+
+  #blue {
+    background-color: blue;
+    color: white;
+    padding: 8px 15px;
+    border: none;
+    margin: 5px;
+  }</style>
