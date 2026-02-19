@@ -1,0 +1,39 @@
+{
+    "173": {
+        "name": "vishnu",
+        "batch": "2022",
+        "attendance": {
+            "total_days": 350,
+            "present_days": 280
+        },
+        "terms": {
+            "1st": {
+                "Tam": 85,
+                "Eng": 90,
+                "3": 55
+            },
+            "2nd": {
+                "Tam": 80,
+                "Eng": 97
+            }
+        }
+    },
+    "174": {
+        "name": "sam",
+        "batch": "2022",
+        "attendance": {
+            "total_days": 350,
+            "present_days": 300
+        },
+        "terms": {
+            "1st": {
+                "Tam": 78,
+                "Eng": 95
+            },
+            "2nd": {
+                "Tam": 100,
+                "Eng": 99
+            }
+        }
+    }
+}
