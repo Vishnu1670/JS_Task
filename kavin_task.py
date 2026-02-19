@@ -7,7 +7,7 @@ def register_student(student_id, name, batch):
     #check the user_id to avoid the duplicate
     if student_id in student:
         print ("Student_id alredy exists!..")
-        return
+        return 
     #alocated the parameter to the key value pare 
     student[student_id] = {
         "name": name,
@@ -95,6 +95,7 @@ def get_topper_by_term(term):
     else:
         print("No data for this term.")
 
+#used gpt
 def rank_students_by_overall_average(batch):
 
     ranking = []
@@ -102,9 +103,10 @@ def rank_students_by_overall_average(batch):
     for sid, data in student.items():
         if data["batch"] == batch :
             avg = calculate_average(sid)
-            ranking.append((data["name"],avg))
+            ranking.append((avg, data["name"]))
     
-    ranking.sort(key=lambda x: x[1], reverse=True)
+    ranking.sort(reverse=True)
+    #arrange the output by a order
     i = 1
     for item in ranking:
         name = item[0]
@@ -224,6 +226,6 @@ while True:
     elif choice == "10":
         print("Exiting...")
         break
-    
+
     else:
         print("Invalid choice.")
